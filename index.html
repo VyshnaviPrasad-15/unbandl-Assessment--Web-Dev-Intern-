@@ -146,7 +146,8 @@
           called a crown
         </p>
       </div>
-      <div class="implant-con">
+
+      <div class="implant-con implant-scroll-container ">
         <div class="implant-card">
           <img
             src="https://cdn.corenexis.com/i/m/ma30/FJ0LSe.jpg?token=1d9425777460b6f274e0a698ba48530f"
@@ -166,46 +167,156 @@
             <a href="#" class="btn consult-btn">Get Free Consultation</a>
           </div>
         </div>
-        <div class="implant-card">
-          <img
-            src="https://cdn.corenexis.com/i/m/ma30/FJ0LSe.jpg?token=1d9425777460b6f274e0a698ba48530f"
-            alt="Tooth Diagram"
-            class="implant-image"
-          />
-          <div class="implant-content">
-            <h4>Ideal for infected or damaged tooth</h4>
-            <ul>
-              <li>Root Canal Treatment</li>
-              <li>Split RCT</li>
-              <li>Split RCT with rubber dam</li>
-              <li>Split RCT with laser</li>
-            </ul>
-            <p class="price-label">Starting Price</p>
-            <p class="price-value">₹ 19,999</p>
-            <a href="#" class="btn consult-btn">Get Free Consultation</a>
+          <div class="implant-card">
+            <img
+              src="https://cdn.corenexis.com/i/m/ma30/FJ0LSe.jpg?token=1d9425777460b6f274e0a698ba48530f"
+              alt="Tooth Diagram"
+              class="implant-image"
+            />
+            <div class="implant-content">
+              <h4>Ideal for infected or damaged tooth</h4>
+              <ul>
+                <li>Root Canal Treatment</li>
+                <li>Split RCT</li>
+                <li>Split RCT with rubber dam</li>
+                <li>Split RCT with laser</li>
+              </ul>
+              <p class="price-label">Starting Price</p>
+              <p class="price-value">₹ 19,999</p>
+              <a href="#" class="btn consult-btn">Get Free Consultation</a>
+            </div>
+          </div>
+          <div class="implant-card">
+            <img
+              src="https://cdn.corenexis.com/i/m/ma30/FJ0LSe.jpg?token=1d9425777460b6f274e0a698ba48530f"
+              alt="Tooth Diagram"
+              class="implant-image"
+            />
+            <div class="implant-content">
+              <h4>Ideal for infected or damaged tooth</h4>
+              <ul>
+                <li>Root Canal Treatment</li>
+                <li>Split RCT</li>
+                <li>Split RCT with rubber dam</li>
+                <li>Split RCT with laser</li>
+              </ul>
+              <p class="price-label">Starting Price</p>
+              <p class="price-value">₹ 19,999</p>
+              <a href="#" class="btn consult-btn">Get Free Consultation</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <script src="script.js">
-      const statsContainer = document.getElementById("statistics");
-              const statItems = statsContainer.children;
-              const statItemWidth = statItems[0].offsetWidth; // Width of a single stat-item
-              const containerWidth = statsContainer.offsetWidth;
-              const itemsToFit = Math.floor(containerWidth / statItemWidth); // Number of items that fit
-              const totalItemsNeeded =
-                itemsToFit > statItems.length ? itemsToFit : statItems.length;
+    <section class="smiles-con">
+      <h2 class="section-title">Real Smiles, Real Transformations</h2>
+      <p class="section-title">
+        See the life-changing results our dental implant patients enjoy
+      </p>
 
-              // Clone and append stat-items to fill the width
-              const originalItems = Array.from(statItems);
-              let currentIndex = 0;
-              while (statsContainer.children.length < totalItemsNeeded) {
-                const clone =
-                  originalItems[currentIndex % originalItems.length].cloneNode(true);
-                statsContainer.appendChild(clone);
-                currentIndex++;
-              }
-    </script>
+      <div class="scroll-container">
+        <div class="patient-card">
+          <img
+            src="https://cdn.corenexis.com/i/m/ma30/tvrNPC.jpg?token=618da300e5468a49f778ff279719c207"
+            class="patient-image"
+            alt="Arjun Mehta"
+          />
+          <div class="patient-name">Arjun Mehta</div>
+          <div class="patient-city">Mumbai</div>
+        </div>
+
+        <div class="patient-card">
+          <img
+            src="https://cdn.corenexis.com/i/m/ma30/lRoB7i.jpg?token=618da300e5468a49f778ff279719c207"
+            class="patient-image"
+            alt="Kavita Sharma"
+          />
+          <div class="patient-name">Kavita Sharma</div>
+          <div class="patient-city">Bangalore</div>
+        </div>
+
+        <div class="patient-card">
+          <img
+            src="https://cdn.corenexis.com/i/m/ma30/KwbVEY.jpg?token=618da300e5468a49f778ff279719c207"
+            class="patient-image"
+            alt="Neha Joshi"
+          />
+          <div class="patient-name">Neha Joshi</div>
+          <div class="patient-city">Delhi</div>
+        </div>
+
+        <div class="patient-card">
+          <img
+            src="https://cdn.corenexis.com/i/m/ma30/wTWhtx.jpg?token=618da300e5468a49f778ff279719c207"
+            class="patient-image"
+            alt="Viram Desai"
+          />
+          <div class="patient-name">Viram Desai</div>
+          <div class="patient-city">Chennai</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clove-section" id="footer-sec">
+        <div class="clove-container">
+          <div class="clove-heading">
+            <h2>Why Choose Clove Dental</h2>
+            <p>Clove Dental is India’s Leading dental care brand with 600+ clinic nationwide</p>
+          </div>
+    
+          <div class="clove-content">
+            <div class="clove-text">
+              <div class="clove-point">
+                <p>DORI - A.I. enabled Dental chair</p>
+                <span>+</span>
+              </div>
+              <div class="clove-point">
+                <p>10x Safety and 4 steps sterilization process</p>
+                <span>+</span>
+              </div>
+              <div class="clove-point">
+                <p>Experienced and Certified implantologist</p>
+                <span>+</span>
+              </div>
+              <div class="clove-point">
+                <p>Updated with world class equipments</p>
+                <span>+</span>
+              </div>
+              <div class="clove-point">
+                <p>Regular audits for safety protocols</p>
+                <span>+</span>
+              </div>
+            </div>
+            <div class="clove-image">
+              <img src="https://cdn.corenexis.com/i/m/ma30/IegpcJ.jpg?token=618da300e5468a49f778ff279719c207" alt="Dentist with Patient"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="logo">
+            <div class="brand">clove:)</div>
+            <div class="dental">DENTAL</div>
+          </div>
+    
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of service</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+    
+        <div class="divider"></div>
+    
+        <div id="footer-sec">
+            <span id="copyright-text"></span>
+        </div>
+    
+      </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
