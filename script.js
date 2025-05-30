@@ -19,3 +19,17 @@ while (statsContainer.children.length < totalItemsNeeded) {
   statsContainer.appendChild(clone);
   currentIndex++;
 }
+
+const year = new Date().getFullYear();
+const isMobile = window.innerWidth <= 768;
+const footerSec = document.getElementById("footer-sec");
+
+const text = isMobile
+  ? "© Copyright 2021 All Rights Reserved. Innovative Oral Care Solutions Pvt. Ltd. Managed By Unbundl"
+  : `All Rights Reserved - ${year}, Clove Dental (a brand name of M/s. SStar Dental Centre Private Limited). Managed By Unbund`;
+
+// Create or update the text content
+const copyrightSpan = document.getElementById("copyright-text");
+if (copyrightSpan) {
+  copyrightSpan.innerText = text;
+}
