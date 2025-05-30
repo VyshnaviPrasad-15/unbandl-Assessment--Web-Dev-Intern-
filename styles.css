@@ -552,3 +552,288 @@ body {
     padding-left: 1rem;
   }
 }
+.section-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+.patient-card {
+  display: inline-block;
+  width: 300px;
+  margin-right: 20px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.patient-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.patient-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.patient-city {
+  color: orange;
+}
+
+.smiles-con {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.dental-implant-section {
+  padding: 2rem;
+}
+
+.dental-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.implant-scroll-container {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.implant-card {
+  flex: 0 0 auto; /* Prevent shrinking */
+  width: 600px; /* Or any fixed width you prefer */
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  scroll-snap-align: start;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.implant-image {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.implant-content {
+  flex: 1;
+}
+
+.price-label {
+  font-weight: bold;
+  color: #ff6d00;
+}
+
+.price-value {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.consult-btn {
+  display: inline-block;
+  background-color: #ff6d00;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .implant-card {
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 90%;
+  }
+
+  .implant-image {
+    width: 100%;
+  }
+}
+
+.implant-scroll-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.implant-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+.implant-scroll-container {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.clove-section {
+  background: #fff;
+  padding: 60px 20px;
+  overflow-x: hidden; /* Hidden horizontal scroll */
+}
+
+.clove-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.clove-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.clove-heading h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2d2d2d;
+}
+
+.clove-heading p {
+  font-size: 16px;
+  color: #5f5f5f;
+}
+
+.clove-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.clove-text {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.clove-point {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.clove-point span {
+  color: #ff7a00;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.clove-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.clove-image img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .clove-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.footer {
+  border-top: 1px solid #d9d9d9;
+  background-color: #784e2a;
+  padding-bottom: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo .brand {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff7e2d;
+}
+
+.logo .dental {
+  font-size: 14px;
+  letter-spacing: 5px;
+  margin-top: 5px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.divider {
+  border-top: 1px solid #d9d9d9;
+  margin: 20px 0;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    align-items: flex-start;
+  }
+
+  .copyright {
+    text-align: left;
+  }
+}
