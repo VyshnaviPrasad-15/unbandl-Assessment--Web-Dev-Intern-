@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #fef9f4; /* White background for the entire page */
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fef9f4; /* Color from your original topbar */
+  flex-wrap: wrap;
+  font-family: "Segoe UI", sans-serif;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.brand {
+  color: #e57200;
+  font-size: 28px;
+}
+
+.brand .smile {
+  color: #3e2009;
+}
+
+.subtext {
+  letter-spacing: 3px;
+  color: #3e2009;
+  font-size: 12px;
+  margin-top: -4px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.book-btn {
+  background-color: #f7943d;
+  color: white;
+  border: none;
+}
+
+.call-btn {
+  color: #3e2009;
+  border: 2px solid #3e2009;
+  background-color: white;
+}
+
+.btn i {
+  color: #e57200;
+}
+
+/* Hero Section */
+.responsive-hero-section {
+  background-image: url("https://ik.imagekit.io/9cx0blwhrc/img1.jpg?updatedAt=1748602455873");
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  padding-bottom: 0px;
+  /* Adjusted margin to attach sections */
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  /* Extend the background color */
+}
+
+.text-block {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem; /* Match the border-radius of the section */
+  position: relative;
+  height: 240px;
+  width: 600px;
+  margin-top: 20px;
+  flex: 1;
+  padding: 1.5rem 2rem;
+  z-index: 1; /* Ensure text-block is above the background */
+}
+
+.text-block h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 0.5rem;
+}
+
+.orange-highlight {
+  color: #f37321;
+}
+
+.text-block p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+}
+
+.appointment-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(to right, #f7941d, #f26522);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: below;
+  z-index: 1;
+}
+
+.image-container img {
+  max-width: 350px;
+  max-height: 350px;
+  object-fit: contain;
+  background: transparent;
+}
+
+/* Consultation Form */
+.consultation-form {
+  width: 30%;
+  background-color: #fff7f0;
+  border: 1px solid #ffe4cf;
+  padding: 1.5rem;
+
+  font-family: "Segoe UI", sans-serif;
+  color: #333; /* Adjusted margin to attach sections */
+}
+
+.consultation-form h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.consultation-form p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.2rem;
+}
+
+.consultation-form input[type="text"],
+.consultation-form input[type="tel"] {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ffddb9;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+.captcha-container {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+.captcha-container input[type="text"] {
+  flex: 1;
+  height: 2.5rem;
+  border-radius: 2rem 0 0 2rem;
+  border: 1px solid #ffddb9;
+  border-right: none;
+  font-size: 0.9rem;
+  padding: 0 1rem;
+}
+
+.captcha-code {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  background-color: #4a2d1f;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 0 2rem 2rem 0;
+  border: 1px solid #ffddb9;
+  border-left: none;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+.checkbox-container input {
+  accent-color: #f7941d;
+  margin-top: 0.2rem;
+}
+
+.checkbox-container a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.consultation-form button {
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(to right, #f7941d, #f26522);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.consultation-form button:hover {
+  background: linear-gradient(to right, #e97c00, #e55300);
+}
+
+.appointment-cons-con {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 460px;
+  background-color: #fff;
+  gap: 0px; /* White background for the container */
+}
+
+/* Partner Logos */
+.partner-logos {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.partner-logos img {
+  height: 30px;
+  object-fit: contain;
+}
+
+/* Statistics Section */
+.statistics {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  background-color: #fdf6f0;
+  border-top: 1px solid #f0f0f0;
+  width: 100%;
+  gap: 0px;
+  justify-content: space-between;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0px;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  flex: 0 0 auto;
+  min-width: 120px; /* Minimum width to ensure consistent spacing */
+  padding: 5px;
+  background-color: #fdf6f0;
+}
+
+.stat-item img.cimg {
+  width: 40px;
+  height: 40px;
+}
+
+.stat-item span:first-child {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.stat-item span:last-child {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  .actions {
+    gap: 8px;
+  }
+
+  .book-btn {
+    display: none;
+  }
+
+  .brand {
+    font-size: 24px;
+  }
+
+  .subtext {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .appointment-cons-con {
+    flex-direction: column;
+  }
+
+  .responsive-hero-section {
+    width: 100%;
+    margin: 10px;
+    border-radius: 0.5rem;
+  }
+
+  .ct-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-block {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .text-block h2 {
+    font-size: 1.4rem;
+  }
+
+  .text-block p {
+    font-size: 0.95rem;
+  }
+
+  .appointment-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .image-container {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .image-container img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .consultation-form {
+    width: 100%;
+    margin: 10px;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .consultation-form h2 {
+    font-size: 1.2rem;
+  }
+
+  .consultation-form p {
+    font-size: 0.85rem;
+  }
+
+  .statistics {
+    padding: 10px;
+  }
+
+  .stat-item {
+    min-width: 100px;
+  }
+
+  .stat-item span:first-child {
+    font-size: 1rem;
+  }
+
+  .stat-item span:last-child {
+    font-size: 0.8rem;
+  }
+}
+
+.dental-implant-section {
+  padding: 3rem 1rem;
+  background: #fff;
+  color: #222;
+  font-family: "Segoe UI", sans-serif;
+  width: 100%;
+}
+
+.implant-con {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.dental-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dental-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+.dental-header p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.implant-card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 1.5rem;
+  border: 1px solid #f7941d;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 20px;
+  background: #fdfdfd;
+  color: #000000;
+}
+
+.implant-image {
+  width: 50%;
+  object-fit: cover;
+  background: #ffe;
+}
+
+.implant-content {
+  padding: 1.5rem;
+  background: #ffffff;
+  color: #070707;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.implant-content h4 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #141313;
+}
+
+.implant-content ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.2rem;
+  color: #181818;
+}
+
+.implant-content ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.price-label {
+  color: #f7941d;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.price-value {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.consult-btn {
+  background: #f7941d;
+  color: #fff;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.consult-btn:hover {
+  background: #e66d00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .implant-card {
+    flex-direction: column;
+  }
+
+  .implant-image,
+  .implant-content {
+    width: 100%;
+  }
+
+  .implant-image {
+    height: auto;
+  }
+
+  .implant-content {
+    padding: 1.2rem;
+    text-align: center;
+  }
+
+  .implant-content ul {
+    text-align: left;
+    padding-left: 1rem;
+  }
+}
